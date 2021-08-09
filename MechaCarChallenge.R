@@ -38,6 +38,6 @@ lot_summary <- coil_table  %>% group_by(Manufacturing_Lot) %>% summarize(Mean=me
 t.test(coil_table$PSI, mu = 1500)
 
 #  T-Tests to determine if the PSI for each manufacturing lots is statistically different from the population mean of 1,500 PSI
-t.test(subset(coil_table$PSI, coil_table$Manufacturing_Lot == "Lot1", mu = 1500))
-t.test(subset(coil_table$PSI, coil_table$Manufacturing_Lot == "Lot2", mu = 1500))
-t.test(subset(coil_table$PSI, coil_table$Manufacturing_Lot == "Lot3", mu = 1500))
+t.test(subset(coil_table, Manufacturing_Lot == 'Lot1', select = c(PSI)), mu = 1500)
+t.test(subset(coil_table, Manufacturing_Lot == 'Lot2', select = c(PSI)), mu = 1500)
+t.test(subset(coil_table, Manufacturing_Lot == 'Lot3', select = c(PSI)), mu = 1500)
