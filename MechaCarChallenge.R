@@ -4,7 +4,7 @@
 library(dplyr) 
 
 #Read CSV file and create dataframe
-mpg_table <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors = F) 
+mpg_table <- read.csv(file='Data/MechaCar_mpg.csv',check.names=F,stringsAsFactors = F) 
 
 #Create multiple linear regression
 lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=mpg_table) 
@@ -17,7 +17,7 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 # Suspension manufacturing quality
 
 #Read CSV file and create dataframe
-coil_table <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
+coil_table <- read.csv(file='Data/Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
 
 #Get the mean, median, variance, and standard deviation of the suspension coil's PSI
 total_summary <- coil_table %>% summarize(Mean=mean(PSI),
