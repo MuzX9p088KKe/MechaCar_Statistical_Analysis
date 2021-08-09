@@ -11,7 +11,7 @@ In order to predict the prototype's potential gas mileage, the potential impact 
 
 The multiple linear regression yielded the following table, which includes equation coefficients:
 
-|                  | Estimate   | Std. Error | t value | Pr(>|t|)     |
+|    Variables     | Estimate   | Std. Error | t value | Pr(>t)       |
 |------------------|------------|------------|---------|--------------|
 | (Intercept)      | -1.040e+02 | 1.585e+01  | -6.559  | 5.08e-08 *** |
 | vehicle_length   | 6.267e+00  | 6.553e-01  | 9.563   | 2.60e-12 *** |
@@ -19,6 +19,7 @@ The multiple linear regression yielded the following table, which includes equat
 | spoiler_angle    | 6.877e-02  | 6.653e-02  | 1.034   | 0.3069       |
 | ground_clearance | 3.546e+00  | 5.412e-01  | 6.551   | 5.21e-08 *** |
 | AWD              | -3.411e+00 | 2.535e+00  | -1.346  | 0.1852       |
+
 
 #### Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 As the Pr(>|t|) values show a more significant correlation as they approach 0, it seems that the vehicle length and ground clearance both have a strong influence on MPG. Vehicle weight seems to also be a factor but to a much lesser degree.
@@ -70,4 +71,12 @@ Lot 3 compared to population mean.
 Thanks to the above T-tests, it seems lot 1 and lot 2 along with all lots together have p-values much higher than 0.05 so their mean PSI is equal to the ideal pressure at 1500PSI. Lot 3, howeverm is a bit below 0.05 although still pretty close. The null hypothesis cannot entirely be rejected and would require further inquiry.
 
 ### Study of Prototype Against the competition
+In order to compare this prototype car to competitors, the first thing to establish would be what type of vehicles to compare it to; is it closer to a luxury sports car or an affordable 4-door sedan? 
+Once the competition has been narrowed to like-vehicles, a more relevant analysis can be conducted.
 
+It is possible to expand on the gas mileage analysis started above. First off, since the intercept seemed to be of significant importance, it seems obvious that other factors such as a vehicle's drag coefficient would greatly influence its performance and fuel consumption. Gathering drag coefficient data and adding it to the multiple linear regression model could create a much more accurate equation.
+This data could be supplemented by including EPA-certified gas mileage data for both city and highway driving. Accurate gas mileage data could help a potential customer with their purchase decision.
+
+Obviously, price will be a very important factor for the prototype to be successful. An analysis comparing similar vehicles along both price and performance data would be extremely useful in determining the perfect price point for the prototype. For example, a multiple linear regression model including price, horsepower, drivetrain, displacement, cylinders, 0-60mph time etc. for a sample of vehicles would be a good start.
+
+The cost of ownership year over year and reliability of the vehicle would also be something to investigate. Data could be collected for various similar types of vehicles and grouped by different degrees of usage. This could include tire lifetime and costs, engine maintenance, repair costs and downtime, average daily mileage, etc.
