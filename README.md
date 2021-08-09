@@ -51,18 +51,19 @@ As shown in the above images, the median PSI of 1500 for the whole population is
 
 #### T-Tests
 
-![image](https://user-images.githubusercontent.com/76575162/128661350-f5eb0682-091c-4a43-b2c3-7e3ea514bf80.png)
+![image](https://user-images.githubusercontent.com/76575162/128662154-14c1574a-79af-4431-82d5-ce83366334b4.png)
 
 All lots compared to population mean.
 
+![image](https://user-images.githubusercontent.com/76575162/128662146-4839486e-ee44-47e2-9bf5-eb5ad880c3fe.png)
 
 Lot 1 compared to population mean.
 
-
+![image](https://user-images.githubusercontent.com/76575162/128662134-0b1e0be1-4d38-4778-b0cd-8474318ac697.png)
 
 Lot 2 compared to population mean.
 
-
+![image](https://user-images.githubusercontent.com/76575162/128662123-1c89577a-8712-4ad6-a15c-4bd69246cdbb.png)
 
 Lot 3 compared to population mean.
 
